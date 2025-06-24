@@ -236,7 +236,7 @@ function App() {
                 style={{
                     backgroundImage: `url(${isMobile ? backgroundhp2 : backgroundpc2})`,
                     // backgroundSize: 'cover',
-                    backgroundSize: '125%',
+                    backgroundSize: '135%',
                     backgroundPosition: 'center',
                 }}
             >
@@ -281,6 +281,54 @@ function App() {
                             >
                                 Konfirmasi Kehadiran
                             </motion.button>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
                             <motion.div
                                 className="mb-8 text-lg space-y-1 font-poppins"
                                 variants={fadeIn}
