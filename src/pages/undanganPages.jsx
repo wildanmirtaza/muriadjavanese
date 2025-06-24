@@ -375,30 +375,6 @@ function App() {
                                 initial="hidden"
                                 animate="visible"
                             >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
                                 <p>Countdown</p>
                                 <p>Sabtu, 5 Juli 2025</p>
                             </motion.div>
