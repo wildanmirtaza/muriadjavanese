@@ -236,7 +236,7 @@ function App() {
                 style={{
                     backgroundImage: `url(${isMobile ? backgroundhp2 : backgroundpc2})`,
                     // backgroundSize: 'cover',
-                    backgroundSize: '100%',
+                    backgroundSize: '110%',
                     backgroundPosition: 'center',
                 }}
             >
