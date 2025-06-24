@@ -434,7 +434,7 @@ function App() {
                                         <p className="text-white font-semibold mt-3"></p>
                                     </motion.div>
     <motion.div
-      className="relative mt-10 p-8 rounded-xl shadow-lg text-white max-w-3xl mx-auto z-20"
+      className="relative mt-10 p-8 rounded-xl text-white max-w-3xl mx-auto z-20"
       variants={fadeIn}
       initial="hidden"
       whileInView="visible"
