@@ -506,6 +506,14 @@ function App() {
       >
       </motion.p>
     </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
                         </motion.div>
                     )}
                 </AnimatePresence>
