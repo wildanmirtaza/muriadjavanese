@@ -566,11 +566,19 @@ function App() {
           <button
             type="button"
             onClick={submitReservation}
-            className="bg-white-700/60 hover:bg-white-800/60 border-1 border-white-400 text-white-300 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 w-full sm:w-auto cursor-pointer hover:scale-105"
+            className="bg-yellow-300/60 hover:bg-white-800/60 border-1 border-white-400 text-white-300 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 w-full sm:w-auto cursor-pointer hover:scale-105"
           >
             Konfirmasi
           </button>
         </motion.div>
+                            <motion.div
+                                className="mb-12 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
       </motion.div>
     </motion.div>
                             </div>
