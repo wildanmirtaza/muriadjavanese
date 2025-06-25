@@ -12,7 +12,7 @@ import "../App.css";
 import { useParams, useNavigate } from "react-router-dom";
 import { QRCode, message } from "antd";
 import backgroundpc2 from "../assets/backgroundpc2.png";
-import backgroundhp2 from "../assets/bg-app-hp.gif";
+import backgroundhp2 from "../assets/bg-app-hp.webp";
 
 function App() {
     const navigate = useNavigate();
