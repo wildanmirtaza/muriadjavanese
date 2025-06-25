@@ -243,7 +243,7 @@ function App() {
                 <AnimatePresence>
                     {!isOpened && (
                         <motion.div
-                            className="absolute inset-0 flex flex-col items-center text-center p-6 overflow-y-auto"
+                            className="absolute inset-0 flex flex-col items-center text-center p-6"
                             variants={fadeInUp}
                             initial="hidden"
                             animate="visible"
@@ -289,69 +289,44 @@ function App() {
                             >
                                 <p></p>
                             </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
                             <motion.button
                                 onClick={() => setIsOpened(true)}
                                 className="bg-black text-gray-200 font-semibold text-lg px-6 py-3 rounded-full shadow-md flex items-center gap-3 hover:bg-yellow-600 transition z-20 font-poppins cursor-pointer"
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                             >
-                                Konfirmasi Kehadiran
+                                Buka Undangan
                             </motion.button>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                <AnimatePresence>
+                    {isOpened && (
+                        <motion.div
+                            className="absolute inset-0 flex flex-col items-center text-center left-0 right-0 -bottom-50 p-6 overflow-y-auto font-poppins"
+                            style={{ top: 200 }}
+                            variants={pageTransition}
+                            initial="hidden"
+                            animate="visible"
+                            exit="exit"
+                        >
+                            <motion.img
+                                src={logo}
+                                alt="Logo"
+                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
+                                variants={scaleIn}
+                                initial="hidden"
+                                animate="visible"
+                            />
                             <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
+                                className="mb-8 text-lg space-y-1 font-poppins font-semibold"
                                 variants={fadeIn}
                                 initial="hidden"
                                 animate="visible"
                             >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
+                                <p>Sabtu, 5 Juli 2025</p>
+                                <p>Alun-Alun Simpang 7 Kudus</p>
                             </motion.div>
                             <motion.div
                                 className="mb-8 text-lg space-y-1 font-poppins"
@@ -376,7 +351,6 @@ function App() {
                                 animate="visible"
                             >
                                 <p>Countdown</p>
-                                <p>Sabtu, 5 Juli 2025</p>
                             </motion.div>
                                     {timerComponents.length ? (
                                         <motion.div
@@ -418,7 +392,7 @@ function App() {
                                         viewport={{ once: true, amount: 0.2 }}
                                     >
                                         <h2 className="text-3xl font-semibold text-yellow-400 mb-4">Lokasi Acara</h2>
-                                        <p className="text-white font-semibold mt-3">Alun-Alun Simpang 7 Kudus</p>
+                                        <p className="text-white mt-3">Alun-Alun Simpang 7 Kudus</p>
                                         <p className="text-white font-semibold mt-3"></p>
                                         <div className="animate-zoom-in">
                                             <iframe
@@ -460,7 +434,7 @@ function App() {
         className="flex justify-center"
         variants={fadeIn}
       >
-        <div className="relative group bg-gradient-to-r from-yellow-400 to-yellow-600 p-1 rounded-2xl shadow-lg">
+        <div className="relative group bg-gradient-to-r from-white-400 to-white-600 p-1 rounded-2xl shadow-lg">
           <div className="bg-white p-2 rounded-xl transition-transform duration-300 group-hover:scale-105">
             <QRCode
               value={slug}
@@ -482,28 +456,6 @@ function App() {
       >
       </motion.p>
     </motion.div>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                        </motion.div>
-                    )}
-                </AnimatePresence>
-
-                <AnimatePresence>
-                    {isOpened && (
-                        <motion.div
-                            className="absolute left-0 right-0 -bottom-50 p-6 overflow-y-auto font-poppins"
-                            style={{ top: 200 }}
-                            variants={pageTransition}
-                            initial="hidden"
-                            animate="visible"
-                            exit="exit"
-                        >
                             <div className="max-w-3xl mx-auto text-center mt-10">
 <motion.div
       className="mt-10 p-8 rounded-2xl shadow-2xl text-white w-full max-w-3xl mx-auto z-20 border border-white-500"
@@ -513,7 +465,7 @@ function App() {
       viewport={{ once: true, amount: 0.2 }}
     >
       <motion.h1
-        className="text-3xl font-extrabold text-yellow-400 text-center mb-8 tracking-wide"
+        className="text-3xl text-yellow-400 text-center mb-8 tracking-wide"
         variants={fadeIn}
       >
         Konfirmasi Kehadiran
@@ -606,6 +558,22 @@ function App() {
       </motion.div>
     </motion.div>
                             </div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
                         </motion.div>
                     )}
                 </AnimatePresence>
