@@ -257,6 +257,14 @@ function App() {
                             >
                                 <p></p>
                             </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
                             <motion.img
                                 src={logo}
                                 alt="Logo"
@@ -391,7 +399,7 @@ function App() {
                                         whileInView="visible"
                                         viewport={{ once: true, amount: 0.2 }}
                                     >
-                                        <h2 className="text-3xl font-semibold text-yellow-400 mb-4">Lokasi Acara</h2>
+                                        <h2 className="text-3xl font-semibold text-yellow-400 mb-4">Venue</h2>
                                         <p className="text-white mt-3">Alun-Alun Simpang 7 Kudus</p>
                                         <p className="text-white font-semibold mt-3"></p>
                                         <div className="animate-zoom-in">
