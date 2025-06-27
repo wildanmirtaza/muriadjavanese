@@ -432,6 +432,14 @@ function App() {
                                         </div>
                                         <p className="text-white font-semibold mt-3"></p>
                                     </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
     <motion.div
       className="relative mt-10 p-8 rounded-xl text-white max-w-3xl mx-auto z-20"
       variants={fadeIn}
@@ -439,6 +447,30 @@ function App() {
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
     >
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
       <motion.h2
         className="text-3xl font-bold text-yellow-400 mb-8 text-center tracking-wider"
         variants={fadeIn}
