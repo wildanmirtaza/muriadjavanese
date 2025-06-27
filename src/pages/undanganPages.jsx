@@ -13,6 +13,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { QRCode, message } from "antd";
 import backgroundpc2 from "../assets/backgroundpc2.png";
 import backgroundhp2 from "../assets/bg-app-hp.webp";
+import artis from "../assets/artis.png";
 
 function App() {
     const navigate = useNavigate();
@@ -360,6 +361,14 @@ function App() {
                             >
                                 <p></p>
                             </motion.div>
+                            <motion.img
+                                src={artis}
+                                alt="Artis"
+                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
+                                variants={scaleIn}
+                                initial="hidden"
+                                animate="visible"
+                            />
                             <motion.div
                                 className="mb-8 text-lg space-y-1 font-poppins"
                                 variants={fadeIn}
