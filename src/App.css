@@ -26,7 +26,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(212, 134, 38, 0.538);
+  background-color: rgba(0, 0, 0, 0.25);
   /* Warna biru tua */
   border-radius: 4px;
   /* Membuat sudut melengkung */
