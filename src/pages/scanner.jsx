@@ -288,7 +288,7 @@ const AdminGuestList = () => {
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="p-6 text-white font-sriracha rounded-xl max-w-4xl mx-auto mt-10 z-20">
+                <div className="p-6 text-gray-100/10 font-sriracha rounded-xl max-w-4xl mx-auto mt-10 z-20">
                     <input
                         ref={inputRef}
                         type="text"
