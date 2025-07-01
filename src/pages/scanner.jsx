@@ -321,6 +321,14 @@ const AdminGuestList = () => {
                     </h2>
                 </div>
             </Modal>
+<div className="fixed bottom-4 right-4 z-50">
+                <button
+                    onClick={() => { fetchGuests(); fetchDataReservasi(); fetchDataKehadiran(); messageApi.success("Berhasil Fetch Data"); }}
+                    className="px-4 py-2 text-gray-100/10 rounded-xl shadow transition duration-300 cursor-pointer"
+                >
+                    Refresh
+                </button>
+</div>
         </>
     );
 };
