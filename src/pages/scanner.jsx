@@ -219,7 +219,7 @@ const AdminGuestList = () => {
                             behavior: "smooth",
                         });
                     }
-                }, 3000);
+                }, 3456);
             }
         } else {
             messageApi.error("Tamu tidak ditemukan atau data barcode tidak valid.");
