@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/hero-app.png";
+import invitoo from "../assets/invitoo.png";
 import backgroundpc from "../assets/backgroundpc.png";
 import backgroundhp from "../assets/backgroundhp4.png";
 import imgGallery1 from "../assets/imgGallery1.png";
@@ -314,6 +315,14 @@ function App() {
                             >
                                 Buka Undangan
                             </motion.button>
+                            <motion.img
+                                src={invitoo}
+                                alt="Invitoo"
+                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
+                                variants={scaleIn}
+                                initial="hidden"
+                                animate="visible"
+                            />
                         </motion.div>
                     )}
                 </AnimatePresence>
