@@ -300,22 +300,6 @@ function App() {
                             >
                                 Buka Undangan
                             </motion.button>
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
-                            <motion.img
-                                src={sponsor}
-                                alt="Sponsor"
-                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
-                                variants={scaleIn}
-                                initial="hidden"
-                                animate="visible"
-                            />
                             <motion.img
                                 src={invitoo}
                                 alt="Invitoo"
