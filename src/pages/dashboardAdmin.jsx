@@ -404,7 +404,7 @@ const AdminGuestList = () => {
                                             <tr>
                                                 <th className="px-4 py-2 border-b w-[10%]">No</th>
                                                 <th className="px-4 py-2 border-b w-[40%]">Nama Tamu</th>
-                                                <th className="px-4 py-2 border-b w-[20%]">Nomor Meja</th>
+                                                <th className="px-4 py-2 border-b w-[20%]">Nomor Kursi</th>
                                                 <th className="px-4 py-2 border-b w-[30%]">Link Undangan</th>
                                             </tr>
                                         </thead>
