@@ -251,14 +251,6 @@ function App() {
                             animate="visible"
                             exit={{ opacity: 0, scale: 0.8, transition: { duration: 0.5 } }}
                         >
-                            <motion.div
-                                className="mb-8 text-lg space-y-1 font-poppins"
-                                variants={fadeIn}
-                                initial="hidden"
-                                animate="visible"
-                            >
-                                <p></p>
-                            </motion.div>
                             <motion.img
                                 src={logo}
                                 alt="Logo"
