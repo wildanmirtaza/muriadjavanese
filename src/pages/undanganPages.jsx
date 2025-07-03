@@ -318,7 +318,7 @@ function App() {
                             <motion.img
                                 src={invitoo}
                                 alt="Invitoo"
-                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
+                                className="w-[40vw] sm:w-[20vw] md:w-[15vw] lg:w-[15vw] mb-5"
                                 variants={scaleIn}
                                 initial="hidden"
                                 animate="visible"
