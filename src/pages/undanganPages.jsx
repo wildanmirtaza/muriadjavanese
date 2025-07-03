@@ -493,16 +493,14 @@ function App() {
       >
         <div className="relative group bg-gradient-to-r from-white-400 to-white-600 p-1 rounded-2xl shadow-lg">
           <div className="bg-white p-2 rounded-xl transition-transform duration-300 group-hover:scale-105">
-            <QRCode
-              value={slug}
-              renderAs="canvas"
-              size={isMobile ? 240 : 300}
-              level="H"
-              fgColor="#000000"
-              bgColor="#FFFFFF"
-              icon={logoEnter}
-              iconSize={75}
-            />
+<QRCode
+  value={slug}
+  renderAs="canvas"
+  size={isMobile ? 240 : 300}
+  level="H"
+  fgColor="#000000"
+  bgColor="#FFFFFF"
+/>
           </div>
         </div>
       </motion.div>
