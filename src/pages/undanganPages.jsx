@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from "../assets/hero-app.png";
 import invitoo from "../assets/invitoo.png";
+import sponsor from "../assets/sponsor.png";
 import backgroundpc from "../assets/backgroundpc.png";
 import backgroundhp from "../assets/backgroundhp4.png";
 import imgGallery1 from "../assets/imgGallery1.png";
@@ -293,12 +294,28 @@ function App() {
                             </motion.div>
                             <motion.button
                                 onClick={() => setIsOpened(true)}
-                                className="bg-black text-gray-200 font-semibold text-lg px-6 py-3 rounded-full shadow-md flex items-center gap-3 hover:bg-yellow-600 transition z-20 font-poppins cursor-pointer"
+                                className="bg-white text-black font-semibold text-lg px-6 py-3 rounded-full shadow-md flex items-center gap-3 hover:bg-yellow-600 transition z-20 font-poppins cursor-pointer"
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.9 }}
                             >
                                 Buka Undangan
                             </motion.button>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.img
+                                src={sponsor}
+                                alt="Sponsor"
+                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
+                                variants={scaleIn}
+                                initial="hidden"
+                                animate="visible"
+                            />
                             <motion.img
                                 src={invitoo}
                                 alt="Invitoo"
@@ -329,6 +346,38 @@ function App() {
                                 initial="hidden"
                                 animate="visible"
                             />
+                            <motion.img
+                                src={sponsor}
+                                alt="Sponsor"
+                                className="w-[80vw] sm:w-[40vw] md:w-[30vw] lg:w-[30vw] mb-10"
+                                variants={scaleIn}
+                                initial="hidden"
+                                animate="visible"
+                            />
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
                             <motion.div
                                 className="mb-8 text-lg space-y-1 font-poppins font-semibold"
                                 variants={fadeIn}
@@ -337,6 +386,23 @@ function App() {
                             >
                                 <p>Sabtu, 5 Juli 2025</p>
                                 <p>Alun-Alun Simpang 7 Kudus</p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p></p>
+                            </motion.div>
+                            <motion.div
+                                className="mb-8 text-lg space-y-1 font-poppins font-semibold"
+                                variants={fadeIn}
+                                initial="hidden"
+                                animate="visible"
+                            >
+                                <p>Dresscode</p>
+                                <p>Etnik/Batik</p>
                             </motion.div>
                             <motion.div
                                 className="mb-8 text-lg space-y-1 font-poppins"
