@@ -288,7 +288,7 @@ const AdminGuestList = () => {
                     backgroundPosition: 'center',
                 }}
             >
-                <div className="p-6 text-gray-100/10 font-sriracha rounded-xl max-w-4xl mx-auto mt-10 z-20">
+                <div className="p-6 text-black font-sriracha rounded-xl max-w-4xl mx-auto mt-10 z-20">
                     <input
                         ref={inputRef}
                         type="text"
@@ -324,7 +324,7 @@ const AdminGuestList = () => {
 <div className="fixed bottom-4 right-4 z-50">
                 <button
                     onClick={() => { fetchGuests(); fetchDataReservasi(); fetchDataKehadiran(); messageApi.success("Berhasil Fetch Data"); }}
-                    className="px-4 py-2 text-gray-100/10 rounded-xl shadow transition duration-300 cursor-pointer"
+                    className="px-4 py-2 text-black rounded-xl shadow transition duration-300 cursor-pointer"
                 >
                     Refresh
                 </button>
